@@ -20,35 +20,50 @@
 			<!--обмежуючий контейнер-->
 			<div class="header__container">
 				<a href="" class="header__logo">SmartSpace</a>
+				<div class="menu__icon">
+					<span></span>
+				</div>
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="" class="menu__link">Home</a>
+							<a data-goto=".page__section-1" href="#" class="menu__link">Home</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">About</a>
+							<a data-goto=".page__section-1" href="#" class="menu__link">About</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Service</a>
+							<a data-goto=".page__section-2" href="#" class="menu__link">Service</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Portfolio</a>
+							<a data-goto=".page__section-3" href="#" class="menu__link">Portfolio</a>
+							<span class="menu__arrow"></span>
+							<ul class="menu__sub-list">
+								<li class="menu__sub-item">
+									<a data-goto=".page__section-3" href="#" class="menu__sub-link">Residential</a>
+								</li>
+								<li class="menu__sub-item">
+									<a data-goto=".page__section-3" href="#" class="menu__sub-link">Commercial</a>
+								</li>
+								<li class="menu__sub-item">
+									<a data-goto=".page__section-3" href="#" class="menu__sub-link">Agriculture</a>
+								</li>
+								<li class="menu__sub-item">
+									<a data-goto=".page__section-3" href="#" class="menu__sub-link">Industrial</a>
+								</li>
+							</ul>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Blog</a>
+							<a data-goto=".page__section-4" href="#" class="menu__link">Blog</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Contact</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link"></a>
+							<a data-goto=".page__section-5" href="#" class="menu__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main-block">
+			<section class="page__main main-block page__section-1">
 				<div class="main-block__container">
 					<div class="main-block__body body-main-block">
 						<div class="body-main-block__content content-main-block">
@@ -69,19 +84,16 @@
 							<div class="slider-main-block__wrapper swiper-wrapper">
 								<!-- Slides -->
 								<div class="slider-main-block__slide swiper-slide">
-									<img src="img/main/slider/03.jpg" alt="Slider Image">
+									<img src="img/main/slider/09.jpg" alt="Slider Image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="img/main/slider/01.jpg" alt="Slider Image">
 								</div>
 								<div class="slider-main-block__slide swiper-slide">
 									<img src="img/main/slider/02.jpg" alt="Slider Image">
 								</div>
 								<div class="slider-main-block__slide swiper-slide">
-									<img src="img/main/slider/04.jpg" alt="Slider Image">
-								</div>
-								<div class="slider-main-block__slide swiper-slide">
-									<img src="img/main/slider/05.jpg" alt="Slider Image">
-								</div>
-								<div class="slider-main-block__slide swiper-slide">
-									<img src="img/main/slider/06.jpg" alt="Slider Image">
+									<img src="img/main/slider/08.jpg" alt="Slider Image">
 								</div>
 							</div>
 						</div>
@@ -115,7 +127,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__how how">
+			<section class="page__how how page__section-2">
 				<div class="how__container">
 					<h2 class="how__title title title__center">How it works?</h2>
 					<div class="how__items">
@@ -137,7 +149,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__deals deals">
+			<section class="page__deals deals page__section-3">
 				<div class="deals__container">
 					<div class="deals__header header-deals">
 						<div class="header-deals__content">
@@ -282,7 +294,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__featured featured">
+			<section class="page__featured featured page__section-4">
 				<div class="featured__container">
 					<h2 class="featured__title title title__center">Featured Listing of the Week</h2>
 					<div class="featured__body">
@@ -332,14 +344,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__reviews reviews">
+			<section class="page__reviews reviews page__section-5">
 				<div class="reviews__container">
 					<h2 class="reviews__title title">Loved by businesses, and individuals across the globe.</h2>
 					<div class="reviews__items">
 						<a class="reviews__item item-reviews">
 							<div class="item-reviews__raiting simple-rating">
 								<div class="simple-rating__items">
-									<input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+									<input id="simple-rating__5" type="radio" class="simple-rating__item" checked name="simple-rating" value="5">
 									<label for="simple-rating__5" class="simple-rating__label"></label>
 									<input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple-rating" value="4">
 									<label for="simple-rating__4" class="simple-rating__label"></label>
@@ -371,7 +383,7 @@
 									<label for="simple-rating__55" class="simple-rating__label"></label>
 									<input id="simple-rating__44" type="radio" class="simple-rating__item" name="simple-rating-2" value="4">
 									<label for="simple-rating__44" class="simple-rating__label"></label>
-									<input id="simple-rating__33" type="radio" class="simple-rating__item" name="simple-rating-2" value="3">
+									<input id="simple-rating__33" type="radio" class="simple-rating__item" checked name="simple-rating-2" value="3">
 									<label for="simple-rating__33" class="simple-rating__label"></label>
 									<input id="simple-rating__22" type="radio" class="simple-rating__item" name="simple-rating-2" value="2">
 									<label for="simple-rating__22" class="simple-rating__label"></label>
@@ -397,7 +409,7 @@
 								<div class="simple-rating__items">
 									<input id="simple-rating__555" type="radio" class="simple-rating__item" name="simple-rating-3" value="5">
 									<label for="simple-rating__555" class="simple-rating__label"></label>
-									<input id="simple-rating__444" type="radio" class="simple-rating__item" name="simple-rating-3" value="4">
+									<input id="simple-rating__444" type="radio" class="simple-rating__item" checked name="simple-rating-3" value="4">
 									<label for="simple-rating__444" class="simple-rating__label"></label>
 									<input id="simple-rating__333" type="radio" class="simple-rating__item" name="simple-rating-3" value="3">
 									<label for="simple-rating__333" class="simple-rating__label"></label>
@@ -465,25 +477,31 @@
 				<nav class="footer__menu menu-footer">
 					<ul class="menu-footer__list">
 						<li class="menu-footer__item">
-							<a href="" class="menu-footer__link">Home</a>
+							<a data-goto=".page__section-1" href="#" class="menu-footer__link">Home</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="" class="menu-footer__link">About</a>
+							<a data-goto=".page__section-1" href="#" class="menu-footer__link">About</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="" class="menu-footer__link">Service</a>
+							<a data-goto=".page__section-2" href="#" class="menu-footer__link">Service</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="" class="menu-footer__link">Portfolio</a>
+							<a data-goto=".page__section-3" href="#" class="menu-footer__link">Portfolio</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="" class="menu-footer__link">Blog</a>
+							<a data-goto=".page__section-4" href="#" class="menu-footer__link">Blog</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="" class="menu-footer__link">Contact</a>
+							<a data-goto=".page__section-5" href="#" class="menu-footer__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
+				<div class="social">
+					<a href="" class="social__item"><img src="img/icons/social/01.svg" alt=""></a>
+					<a href="" class="social__item"><img src="img/icons/social/02.svg" alt=""></a>
+					<a href="" class="social__item"><img src="img/icons/social/03.svg" alt=""></a>
+					<a href="" class="social__item"><img src="img/icons/social/04.svg" alt=""></a>
+				</div>
 				<div class="footer__copy">Copyright © 2022. All Rights Reseved.</div>
 			</div>
 		</footer>
